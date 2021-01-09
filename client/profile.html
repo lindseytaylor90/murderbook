@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MurderBook</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+      <!-- build:css css/main.css -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+      <link rel="stylesheet" href="css/styles.css" />
+      <!-- endbuild -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">MurderBook</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ./nav -->
+
+  <!-- main -->
+  <main class="container">
+    <div class="row profilepage">
+      <div class="col-md-3">
+        <!-- edit profile -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Edit profile</h4>
+            <form method="post" action="">
+              <div class="form-group">
+                <input class="form-control" type="text" name="status" placeholder="Status" value="">
+              </div>
+
+              <div class="form-group">
+                <input class="form-control" type="text" name="location" placeholder="Location" value="">
+              </div>
+
+              <div class="form-group">
+                <input class="btn btn-primary" type="submit" name="update_profile" value="Save">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ./edit profile -->
+      </div>
+      <div class="col-md-6">
+        <!-- user profile -->
+        <div class="media">
+          <div class="media-left">
+            <img src="img/jop.jpg" class="media-object" style="width: 128px; height: 128px;">
+          </div>
+          <div class="media-body profiletext">
+            <h2 class="media-heading">Taylor</h2>
+            <p>Status: I love true crime! 
+              Location: Montana</p>
+          </div>
+        </div>
+        <!-- user profile -->
+
+        <hr>
+
+        <!-- timeline -->
+        <div>
+          <!-- post -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>Hello people! This is my first MurderBook post. Hurray!!!</p>
+            </div>
+            <div class="panel-footer">
+              <span class="metta-data">posted 2017-5-27 20:45:01 by Taylor Lindsey</span> 
+              <span class="pull-right"><a class="text-danger" href="#">[delete]</a></span>
+            </div>
+          </div>
+          <!-- ./post -->
+        </div>
+        <!-- ./timeline -->
+      </div>
+      <div class="col-md-3">
+        <!-- friends -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Friends</h4>
+            <ul>
+              <li>
+                <a href="#">Isreal Keys</a> 
+                <a class="text-danger" href="#">[unfriend]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./friends -->
+      </div>
+    </div>
+  </main>
+  <!-- ./main -->
+
+   <!-- footer -->
+   <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="madeby row" id="bottom">
+                <p>Murder Book - Made by [Taylor Lindsey]</p>
+            </div>
+            <div class="col 4 col sm 2 offset 1">
+              <h5>Links</h5>
+              <ul class="list unstyled">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+            <div class="col 6 col sm 5 text center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col sm 4 test center">
+                <a role="button" class="btn btn-link" href="tel:5558675309"><i class="fa fa-phone"></i> 1-555-867-5309</a><br>
+                <a role="button" class="btn btn-link" href="mailto:opencases@murderbook.com"><i class="fa fa-envelope-o"></i> opencases@murderbook.com</a>
+            </div>
+        </div>
+      </div>
+</footer>
+  <!-- ./footer -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
