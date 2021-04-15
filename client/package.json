@@ -5,6 +5,7 @@
   "main": "index.html",
   "author": "",
   "license": "ISC",
+  "homepage": "https://lindseytaylor90.github.io/murderbook",
   "devDependencies": {
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
