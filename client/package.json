@@ -1,7 +1,7 @@
 {
-  "name": "faceclone",
+  "name": "murderBook",
   "version": "1.0.0",
-  "description": "html faceclone",
+  "description": "html murderBook",
   "main": "index.html",
   "author": "",
   "license": "ISC",
@@ -25,14 +25,14 @@
     "popper.js": "^1.16.1"
   },
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* -o dist/img",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin && npm run scss",
+    "clean": "rimraf docs",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
+    "imagemin": "imagemin img/* -o docs/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin home.html -d docs --htmlmin -o docs/home.html && usemin index.html -d docs --htmlmin -o docs/index.html",
     "test": "echo\"error: no test specified\" && exit 1",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
