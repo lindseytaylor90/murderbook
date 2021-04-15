@@ -25,7 +25,7 @@
     "popper.js": "^1.16.1"
   },
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin && npm run scss",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "clean": "rimraf docs",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* docs/fonts",
     "imagemin": "imagemin img/* -o docs/img",
