@@ -34,7 +34,7 @@
         <h4>Login to start enjoying unlimited fun!</h4>
 
         <!-- login form -->
-        <form id="login" method="dialog">
+        <form id="login" method="dialog" action="home.html">
           <div class="form-group">
             <input id="name" for="login" class="form-control" type="text" name="username" placeholder="Username"/>
           </div>
@@ -116,12 +116,12 @@
     function logIn() {
       var loginForm = document.getElementById("login");
       console.log(loginForm.name.value, loginForm.password.value);
-      $.post("http://127.0.0.1:8080/home.html", 
+      /*$.post("http://127.0.0.1:8080/home.html", 
         { body: { name: loginForm.name.value, pw: loginForm.password.value}})
       .then(function(data) {
         console.log(data);
         window.location = data.redirectUrl;
-      })
+      })*/
     }
   </script>
   
