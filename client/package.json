@@ -33,7 +33,7 @@
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
-    "usemin": "usemin home.html -d docs --htmlmin -o docs/home.html && usemin index.html -d docs --htmlmin -o docs/index.html",
+    "usemin": "usemin home.html -d docs --htmlmin -o docs/home.html && usemin index.html -d docs --htmlmin -o docs/index.html && usemin profile.html -d docs --htmlmin -o docs/profile.html",
     "test": "echo\"error: no test specified\" && exit 1",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"

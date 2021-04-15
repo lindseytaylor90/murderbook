@@ -34,7 +34,7 @@
         <h4>Login to start enjoying unlimited fun!</h4>
 
         <!-- login form -->
-        <form id="login" method="dialog" action="home.html">
+        <form id="login" method="dialog">
           <div class="form-group">
             <input id="name" for="login" class="form-control" type="text" name="username" placeholder="Username"/>
           </div>
@@ -44,7 +44,7 @@
           </div>
 
           <div class="form-group">
-            <input for="login" class="btn btn-primary" type="submit" name="login" value="Login" onClick="logIn()"/>
+            <input href="home.html"  for="login" class="btn btn-primary" type="submit" name="login" value="Login" onClick="logIn()"/>
           </div>
         </form>
         <!-- ./login form -->
@@ -53,7 +53,7 @@
         <h4>Don't have an account yet? Register!</h4>
 
         <!-- register form -->
-        <form method="post" action="home.html">
+        <form method="dialog">
           <div class="form-group">
             <input class="form-control" type="text" name="username" placeholder="Username">
           </div>
@@ -67,7 +67,7 @@
           </div>
 
           <div class="form-group">
-            <input class="btn btn-success" type="submit" name="register" value="Register">
+            <input href="home.html" class="btn btn-success" type="submit" name="register" value="Register">
           </div>
         </form>
         <!-- ./register form -->
